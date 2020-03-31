@@ -1,46 +1,45 @@
 //Задание 1
 
-//if (a + b < 4) {
-//result = 'Мало';
-//} else {
-//result = 'Много';
-//}
+if (a + b < 4) {
+result = 'Мало';
+} else {
+result = 'Много';
+}
 
-//let a = 1;
-//let b = 2;
-//(a + b < 4) ? result = 'Мало' : result = 'Много';
-//alert(result);
+let a = 1;
+let b = 2;
+(a + b < 4) ? result = 'Мало' : result = 'Много';
+alert(result);
 
 
 //Задание 2 
 
-//for (let i = 0; i < 3; i++) {
-//alert( "номер" + " " + i + "!" );
-//}
+for (let i = 0; i < 3; i++) {
+alert( "номер" + " " + i + "!" );
+}
 
-//let i = 0;
-//while (i < 3) {
-//  alert( `номер ${i}!`);
-//  i++;
-//}
+let i = 0;
+while (i < 3) {
+  alert( `номер ${i}!`);
+  i++;
+}
 
 //Задание 3
 //3. Напишите скрипт, который выводит несколько маленьких картинок в ряд. При нажатии на
 //каждую маленькую картинку, она должна открыться внизу в увеличенном размере (использовать
 //одну функцию и событие onclick).
 
-//s = '';
-//for (i=1; i <= 11; i++) {
-//  s += `<img src="images/${i}.jpg" width="200px" height= "200px" onclick="func1(${i})">`; 
-//}
-//gal.innerHTML = s;
-//
-//function func1(n) {
-//  s1 = '';
-//  s1 += `<img src="images/${n}.jpg" width="500px" height= "500px">`;
-//  pic.innerHTML = s1;
-//}
+s = '';
+for (i=1; i <= 11; i++) {
+  s += `<img src="images/${i}.jpg" width="200px" height= "200px" onclick="func1(${i})">`; 
+}
+gal.innerHTML = s;
 
+function func1(n) {
+  s1 = '';
+  s1 += `<img src="images/${n}.jpg" width="500px" height= "500px">`;
+  pic.innerHTML = s1;
+}
 
 //Задание 4
 
@@ -57,23 +56,23 @@
 //Классика, Рок-н-Ролл
 //Рэп, Регги, Классика, Рок-н-Ролл
 
-//styles = ['Джаз', 'Блюз'];
-//
-//styles.push('Рок-н-Ролл');
-////alert(styles);
-//styles[styles.length - 2] = 'Классика';
-////alert(styles);
-//a= styles.shift();
-//alert(a);
-//styles.unshift('Реп','Рэгги');
+styles = ['Джаз', 'Блюз'];
+styles.push('Рок-н-Ролл');
 //alert(styles);
+styles[styles.length - 2] = 'Классика';
+//alert(styles);
+a= styles.shift();
+alert(a);
+styles.unshift('Реп','Рэгги');
+alert(styles);
 
 //Задание 5 
-//function retItem(arr){
-//  return arr[arr.length - 1];
-//}
-//styles = ['Джаз', 'Блюз', 'Рэп', 'Поп', 'Металл', 'Панк'];
-//alert(retItem(styles));
+
+function retItem(arr){
+  return arr[arr.length - 1];
+}
+styles = ['Джаз', 'Блюз', 'Рэп', 'Поп', 'Металл', 'Панк'];
+alert(retItem(styles));
 
 //Задание 6
 //6. Напишите код, который:
